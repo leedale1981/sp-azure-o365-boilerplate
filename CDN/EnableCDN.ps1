@@ -2,8 +2,8 @@ $programFiles = [environment]::getfolderpath("programfiles")
 
 Add-Type -Path "C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll"
 
-$username = "leedale@att-office.info"
-$password = "M1llwall03"
+$username = ""
+$password = ""
 $cred = New-Object -TypeName System.Management.Automation.PSCredential -argumentlist $username, $(convertto-securestring $password -asplaintext -force)
 Connect-SPOService -Url https://leedale8850hotmail-admin.sharepoint.com -Credential $cred
 
