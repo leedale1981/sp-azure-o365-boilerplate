@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "webUrl": {
+            "type": "string"
+        },
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "event": {
+                    "type": "string"
+                },
+                "product": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

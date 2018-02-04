@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2017/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.20.1711.0, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-FLOWDEMO">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-FLOWDEMO" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:CustomActions>
+        <pnp:WebCustomActions>
+          <pnp:CustomAction 
+            Name="header-footer-customizer" 
+            Description="Custom action for Application Customizer" 
+            Location="ClientSideExtension.ApplicationCustomizer" 
+            Title="Header - Footer - App Customizer" 
+            Sequence="0" 
+            Rights="" 
+            RegistrationType="None" 
+            ClientSideComponentId="509c9c26-0784-4128-b8d9-ef0ffb25c672" 
+            ClientSideComponentProperties="{&quot;Top&quot;:&quot;This is a Top application customizer&quot;,&quot;Bottom&quot;:&quot;This is a Bottom application customizer&quot;}" />
+        </pnp:WebCustomActions>
+      </pnp:CustomActions>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

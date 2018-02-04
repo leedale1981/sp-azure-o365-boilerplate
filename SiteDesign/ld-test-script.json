@@ -1,0 +1,35 @@
+{
+    "$schema": "schema.json",
+    "actions": [{
+        "verb": "createSPList",
+        "listName": "Demo List",
+        "templateType": 100,
+        "subactions": [{
+                "verb": "SetDescription",
+                "description": "Demo List"
+            },
+            {
+                "verb": "addSPField",
+                "fieldType": "Text",
+                "displayName": "Some Text",
+                "isRequired": false,
+                "addToDefaultView": true
+            },
+            {
+                "verb": "addSPField",
+                "fieldType": "Number",
+                "displayName": "Some Number",
+                "addToDefaultView": true,
+                "isRequired": true
+            },
+            {
+                "verb": "addSPField",
+                "fieldType": "Note",
+                "displayName": "Some Description",
+                "isRequired": false
+            }
+        ]
+    }],
+    "bindata": {},
+    "version": 1
+}

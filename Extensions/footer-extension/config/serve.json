@@ -1,0 +1,31 @@
+{
+    "$schema": "https://dev.office.com/json-schemas/core-build/serve.schema.json",
+    "port": 4321,
+    "https": true,
+    "serveConfigurations": {
+        "default": {
+            "pageUrl": "https://leedale8850hotmail.sharepoint.com/sites/SPfxDev/SitePages/Home.aspx",
+            "customActions": {
+                "509c9c26-0784-4128-b8d9-ef0ffb25c672": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "Top": "This is a Top application customizer",
+                        "Bottom": "This is a Bottom application customizer"
+                    }
+                }
+            }
+        },
+        "demoFooter": {
+            "pageUrl": "https://leedale8850hotmail.sharepoint.com/sites/SPfxDev/SitePages/Home.aspx",
+            "customActions": {
+                "509c9c26-0784-4128-b8d9-ef0ffb25c672": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "Top": "This is a Top application customizer",
+                        "Bottom": "This is a Bottom application customizer"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+Test Page URL: 
+
+https://leedale8850hotmail.sharepoint.com/sites/SPfxDev/SitePages/Home.aspx?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={%22509c9c26-0784-4128-b8d9-ef0ffb25c672%22:{%22location%22:%22ClientSideExtension.ApplicationCustomizer%22,%22properties%22:{%22Top%22:%20%22This%20is%20a%20Top%20application%20customizer%22,%22Bottom%22:%20%22This%20is%20a%20Bottom%20application%20customizer%22}}}
+
+App Registration:
+
+Client Id:  	4b870a47-16e4-4347-b143-b4e51a27cc68
+Client Secret:  	a76NJItIpxIvP4lwu1Vih8r2MxWGayLvh1fzAp2RwKE=
+Title:  	Site Provisioning
+App Domain:  	localhost
+Redirect URI:  	https://localhost
+
+Permissions:
+
+<AppPermissionRequests AllowAppOnlyPolicy="true" >
+    <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />
+</AppPermissionRequests>
+
+Storage Queue:
+
+URL - https://lddemoqueue.queue.core.windows.net/pnpprovisioningqueue
+Storage account name - lddemoqueue
+Key 1 Value - fWesKHNSzsn7fQg30Ut83459LDw6h6uh5LaF8CCVOyiDSAeuLINsriSveODv0C4G1ZTFlGOjiinKflY905KrrA==
+Key 1 Connection string - DefaultEndpointsProtocol=https;AccountName=lddemoqueue;AccountKey=fWesKHNSzsn7fQg30Ut83459LDw6h6uh5LaF8CCVOyiDSAeuLINsriSveODv0C4G1ZTFlGOjiinKflY905KrrA==;EndpointSuffix=core.windows.net
+
+Flow:
+
+HTTP POST URL - https://prod-49.westeurope.logic.azure.com:443/workflows/2c76d92072be4c13b5edd8063a3fc440/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Pt5JEJLuU8RGlggwCXAm5OpX6v1-nD02P0j94S5GVJA
+
+
+
