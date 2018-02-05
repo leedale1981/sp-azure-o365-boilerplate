@@ -1,35 +1,45 @@
 {
     "$schema": "schema.json",
     "actions": [{
-        "verb": "createSPList",
-        "listName": "Demo List",
-        "templateType": 100,
-        "subactions": [{
-                "verb": "SetDescription",
-                "description": "Demo List"
-            },
-            {
-                "verb": "addSPField",
-                "fieldType": "Text",
-                "displayName": "Some Text",
-                "isRequired": false,
-                "addToDefaultView": true
-            },
-            {
-                "verb": "addSPField",
-                "fieldType": "Number",
-                "displayName": "Some Number",
-                "addToDefaultView": true,
-                "isRequired": true
-            },
-            {
-                "verb": "addSPField",
-                "fieldType": "Note",
-                "displayName": "Some Description",
-                "isRequired": false
+            "verb": "createSPList",
+            "listName": "Demo List",
+            "templateType": 100,
+            "subactions": [{
+                    "verb": "SetDescription",
+                    "description": "Demo List"
+                },
+                {
+                    "verb": "addSPField",
+                    "fieldType": "Text",
+                    "displayName": "Some Text",
+                    "isRequired": false,
+                    "addToDefaultView": true
+                },
+                {
+                    "verb": "addSPField",
+                    "fieldType": "Number",
+                    "displayName": "Some Number",
+                    "addToDefaultView": true,
+                    "isRequired": true
+                },
+                {
+                    "verb": "addSPField",
+                    "fieldType": "Note",
+                    "displayName": "Some Description",
+                    "isRequired": false
+                }
+            ]
+        },
+        {
+            "verb": "triggerFlow",
+            "url": "https://prod-49.westeurope.logic.azure.com:443/workflows/2c76d92072be4c13b5edd8063a3fc440/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Pt5JEJLuU8RGlggwCXAm5OpX6v1-nD02P0j94S5GVJA",
+            "name": "Apply Template",
+            "parameters": {
+                "event": "",
+                "product": ""
             }
-        ]
-    }],
+        }
+    ],
     "bindata": {},
     "version": 1
 }
